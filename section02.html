@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic 02 - 상세페이지</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .container {
+            display: flex;
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        .t_b {
+            color: #239d3b;
+        }
+
+        .dotList li {
+            position: relative;
+            padding: 0 0 0 20px;
+            line-height: 1.2;
+            margin: 0 0 5px 0;
+        }
+
+        .dotList li::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 2px;
+            height: 2px;
+            background: #239d3b;
+        }
+
+        .business {
+            padding: 100px 0;
+        }
+
+        .business h2 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .business h2::after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 3px;
+            background: #239d3b;
+            margin: 15px auto;
+        }
+
+        .business>p {
+            margin: 0 0 50px 0;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .business .container img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .business figure {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .business figure~figure {
+            border-left: 1px solid transparent;
+        }
+
+        .business figure .cover {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.75);
+            transition: left 0.5s;
+            padding: 40px 10px;
+        }
+
+        .business figure:hover .cover {
+            left: 0;
+        }
+
+        .business figure h3 {
+            font-size: 21px;
+            font-weight: 500;
+            padding: 0 0 20px 0;
+            margin: 0 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .business figure p {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.25;
+        }
+
+        .business figure .cover a {
+            display: inline-block;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 10px 25px;
+            margin-top: auto;
+        }
+
+        .business .inner {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .business .inner::after {
+            content: "";
+            display: block;
+            
+        }
+
+        .business .inner>div {
+            float: left;
+            width: 50%;
+            padding: 0 15px;
+        }
+
+        .business .container {
+            margin: 0 auto 100px auto;
+        }
+
+        .business .tit strong{
+            position: relative;
+            display: block;
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            padding: 0 0 0 20px;
+        }
+
+        .business .tit p {
+            font-size: 15px;
+            font-weight: 300;
+            padding: 0 0 0 20px;
+        }
+
+        .business .tit strong::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 80px;
+            background: #239d3b;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="business">
+        <h2><span class="t_b">OUR</span> BUSINESS</h2>
+        <p>새로운 미래를 열어가는 지구별 컴퍼니</p>
+        <div class="container">
+            <figure>
+                <div class="inbox">
+                    <img src="./img/item01.jpeg" alt="">
+                </div>
+                <div class="cover">
+                    <h3>주요사업 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus pariatur accusamus,
+                        voluptatibus ad nesciunt dolorem!</p>
+                    <a href="">자세히보기</a>
+                </div>
+            </figure>
+            <figure>
+                <div class="inbox">
+                    <img src="./img/item02.jpeg" alt="">
+                </div>
+                <div class="cover">
+                    <h3>주요사업 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus pariatur accusamus,
+                        voluptatibus ad nesciunt dolorem!</p>
+                    <a href="">자세히보기</a>
+                </div>
+            </figure>
+            <figure>
+                <div class="inbox">
+                    <img src="./img/item03.png" alt="">
+                </div>
+                <div class="cover">
+                    <h3>주요사업 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus pariatur accusamus,
+                        voluptatibus ad nesciunt dolorem!</p>
+                    <a href="">자세히보기</a>
+                </div>
+            </figure>
+            <figure>
+                <div class="inbox">
+                    <img src="./img/item04.png" alt="">
+                </div>
+                <div class="cover">
+                    <h3>주요사업 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus pariatur accusamus,
+                        voluptatibus ad nesciunt dolorem!</p>
+                    <a href="">자세히보기</a>
+                </div>
+            </figure>
+        </div>
+        <div class="inner">
+            <div class="tit">
+                <strong>심플하고 깜찍한 지구별 컴퍼니</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, excepturi. Ex, excepturi!</p>
+            </div>
+            <div class="list">
+                <ul class="dotList">
+                    <li>Lorem ipsum, dolor sit</li>
+                    <li>amet consectetur adipisicing elit.</li>
+                    <li>Exercitationem, perspiciatis!</li>
+                    <li>Ex, excepturi.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
