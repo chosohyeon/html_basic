@@ -81,14 +81,12 @@
     padding: 0 0 20px 0;
     margin: 0 0 20px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    color: #fff;
 }
 
 .business figure p {
     font-size: 15px;
     font-weight: 300;
     line-height: 1.25;
-    color: #fff;
 }
 
 .business figure .cover a {
@@ -96,7 +94,6 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 10px 25px;
     margin-top: auto;
-    color: #fff;
 }
 
 .business .inner {

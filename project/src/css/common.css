@@ -16,7 +16,7 @@ font
     box-sizing: border-box;
     font-size: inherit;
     font-weight: inherit;
-    color: #333;
+    color: inherit;
 }
 
 *::after, *::before {
